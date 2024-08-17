@@ -1,39 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello world</title>
+    <title>The Looney Tunes Restoration Guide</title>
   </head>
   <body>
-    <p>This is a test.</p>
-	
-	<div>
-  <canvas id="myChart"></canvas>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
-
+    <script src=".\chart.js\dist\chart.umd.js"></script>
+	<script src=".\xlsx\xlsx.full.min.js"></script>
+	<script src=".\chartplugin\chartjs-plugin-datasource.js"></script>
+    <p>How close are we to completely restoring the <em>Looney Tunes</em> and <em>Merrie Melodies</em> Golden Age shorts?</p>
   </body>
 </html>
