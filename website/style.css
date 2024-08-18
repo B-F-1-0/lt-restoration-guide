@@ -2,10 +2,19 @@ body {
     background-color: aliceblue;
     font-family: 'Ubuntu', 'Trebuchet MS', 'Calibri', sans-serif;
 }
+h1 {
+    text-align: center;
+}
 .content {
     padding: 8px;
     margin: 8px;
     background-color: azure;
+}
+.excel {
+    display: flex;
+    flex: 1 1 auto;
+    width:100%;
+    height: 1024px;
 }
 .footbar {
     background-color: azure;
