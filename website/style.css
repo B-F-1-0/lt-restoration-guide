@@ -50,3 +50,8 @@ h1 {
 .glossaryword {
   font-weight: bold;
 }
+
+/* collector's guide tiers */
+.tierheader {
+  font-weight: bold;
+}
