@@ -55,3 +55,7 @@ h1 {
 .tierheader {
   font-weight: bold;
 }
+.releaseheader {
+  font-weight: bold;
+  font-style: italic;
+}
