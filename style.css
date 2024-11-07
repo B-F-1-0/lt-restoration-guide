@@ -1,6 +1,8 @@
 body {
     background-color: aliceblue;
     font-family: 'Ubuntu', 'Trebuchet MS', 'Calibri', sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 h1 {
     text-align: center;
