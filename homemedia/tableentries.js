@@ -1,6 +1,6 @@
-const homeMediaTableEntry = {
-    releaseName: "",
-    releaseDate: Date("2000-01-01"),
-    cartoons: 0,
-    print: false,
+const homeMediaTableCartoonCountEntry = {
+    restoredTotal: 0,
+    unrestoredTotal: 0,
+    postGoldenAgeRestoredTotal: 0,
+    postGoldenAgeUnrestoredTotal: 0
 }
