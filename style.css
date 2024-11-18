@@ -55,6 +55,56 @@ h1 {
   font-weight: bold;
 }
 
+/* home media table */
+table
+{
+  border: 1px solid black;
+  padding: 0px;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+th, tr
+{
+  padding: 0px;
+}
+th
+{
+  font-size: 24px;
+  font-weight: normal;
+}
+.table_infoheader
+{
+  font-weight: bold;
+  text-align: center;
+}
+.table_infoheader td
+{
+  border: 1px solid black;
+}
+.table_release
+{
+  text-align: center;
+}
+.table_release td
+{
+  border: 1px solid black;
+}
+.table_releasetitle
+{
+  font-weight: 500;
+}
+.table_print_no
+{
+  background-color: lightcoral;
+  color: brown;
+}
+.table_print_yes
+{
+  background-color:palegreen;
+  color: green;
+}
+
 /* collector's guide tiers */
 .tierheader {
   font-weight: bold;
