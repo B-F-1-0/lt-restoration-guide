@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=ubuntu:300,300i,400,400i,500,500i,700,700i);
+
 body {
     background-color: aliceblue;
     font-family: 'Ubuntu', 'Trebuchet MS', 'Calibri', sans-serif;
@@ -53,6 +55,56 @@ h1 {
 /* glossary contents */
 .glossaryword {
   font-weight: bold;
+}
+
+/* home media table */
+table
+{
+  border: 1px solid black;
+  padding: 0px;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+th, tr
+{
+  padding: 0px;
+}
+th
+{
+  font-size: 24px;
+  font-weight: normal;
+}
+.table_infoheader
+{
+  font-weight: bold;
+  text-align: center;
+}
+.table_infoheader td
+{
+  border: 1px solid black;
+}
+.table_release
+{
+  text-align: center;
+}
+.table_release td
+{
+  border: 1px solid black;
+}
+.table_releasetitle
+{
+  font-weight: 500;
+}
+.table_print_no
+{
+  background-color: lightcoral;
+  color: brown;
+}
+.table_print_yes
+{
+  background-color:palegreen;
+  color: green;
 }
 
 /* collector's guide tiers */
