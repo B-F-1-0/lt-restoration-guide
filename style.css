@@ -12,24 +12,11 @@ h1 {
 }
 .content {
     padding: 8px;
-    margin: 8px;
+    margin: 0;
     background-color: azure;
-}
-.excel {
-    display: flex;
-    flex: 1 1 auto;
-    width:100%;
-    height: 1024px;
-}
-/* navigation */
-.headbar {
-    background-color: azure;
-    padding: 8px;
-    margin: 8px;
-    text-align: center;
 }
 #ltlogo {
-  font-family: 'Lemon/Milk', sans-serif;
+  font-family: 'Lemon/Milk', 'Ubuntu', 'Trebuchet MS', 'Calibri', sans-serif;
   font-weight: bolder;
   color: white;
   text-shadow: -2px 2px 0 #000,
@@ -38,90 +25,77 @@ h1 {
                 -2px -2px 0 #000;
 }
 .footbar {
-    background-color: azure;
+    background-color: rgb(78, 231, 231);
     padding: 8px;
-    margin: 8px;
+    margin: 0;
     text-align: right;
     font-size: 10px;
 }
 /* links */
  a:link {
     color: blue;
-    text-decoration: none;
+    /* text-decoration: none; */
   }
   a:visited {
     color: blue;
-    text-decoration: none;
+    /* text-decoration: none; */
   }
-  a:hover {
+  a:hover, a:focus {
     color: crimson;
-    text-decoration: none;
+    /* text-decoration: none; */
   }
   a:active {
     color: darkred;
-    text-decoration: none;
+    /* text-decoration: none; */
   } 
-
-/* glossary contents */
-.glossaryword {
-  font-weight: bold;
+/* navigation */
+.navlogo:link, .navlogo:visited, .navlogo:hover, .navlogo:focus, .navlogo:active {
+  color: inherit;
+  text-decoration: none;
 }
-
-/* home media table */
-table
+.headbar {
+    background-color: rgb(203, 255, 255);
+    margin: 0;
+}
+.headbar h1 {
+    padding: 8px 0;
+    margin: 0;
+}
+.headbar h1 a
 {
-  border: 1px solid black;
-  padding: 0px;
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
+  transition: all 350ms;
 }
-th, tr
-{
-  padding: 0px;
+.headbar h1 a:hover {
+  filter:contrast(0.8);
 }
-th
-{
-  font-size: 24px;
-  font-weight: normal;
+.headbar h1 a:active {
+  filter:contrast(0.5);
 }
-.table_infoheader
-{
-  font-weight: bold;
-  text-align: center;
+.headbar .navigation {
+    overflow: hidden;
+    background-color: rgb(145, 213, 240);
+    width: 100%;
 }
-.table_infoheader td
-{
-  border: 1px solid black;
+.headbar .navigation a, .headbar .navigation p {
+    float: left;
+    display: block;
+    background-color: rgb(145, 213, 240);
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
 }
-.table_release
-{
-  text-align: center;
+.navigation_dropdown .navigation_dropbtn, .navigation_dropdown .navigation_dropdown_content a, .headbar .navigation a {
+  transition: background-color 350ms, color 350ms;
 }
-.table_release td
-{
-  border: 1px solid black;
+/* hover events */
+.headbar .navigation a:hover, .navigation_dropdown:hover .navigation_dropbtn, .navigation_dropdown .navigation_dropdown_content a:hover {
+  background-color: #003ec5;
+  color: white;
 }
-.table_releasetitle
-{
-  font-weight: 500;
-}
-.table_print_no
-{
-  background-color: lightcoral;
-  color: brown;
-}
-.table_print_yes
-{
-  background-color:palegreen;
-  color: green;
-}
-
-/* collector's guide tiers */
-.tierheader {
-  font-weight: bold;
-}
-.releaseheader {
-  font-weight: bold;
-  font-style: italic;
+.headbar .navigation a:active, .navigation_dropdown:active .navigation_dropbtn, .navigation_dropdown .navigation_dropdown_content a:active {
+  background-color: #050044;
+  color: white;
 }
